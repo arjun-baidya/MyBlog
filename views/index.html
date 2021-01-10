@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="mb-4">Blog Articles</h1>
+    <a href="/articles/new" class="btn btn-success">New Articles</a>
+    <div class="cart mt-4">
+        <%= articles.title %>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="title">Title</label>
+    <input required type="text" name="title" id="title" class="form-control">
+</div>
+<div class="form-group">
+    <label for="description">Description</label>
+    <textarea  name="description" id="description" class="form-control"></textarea>
+</div>
+<div class="form-group">
+    <label for="markdown">Markdown</label>
+    <textarea  name="markdown" id="markdown" class="form-control"></textarea>
+</div>
+
+<a href="/" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Save</button>
+
+</body>
+</html>

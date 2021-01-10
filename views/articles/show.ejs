@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Blog</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="mb-2"><%= articles.title %></h1>
+    <div class="text-muted mb-2"><%= articles.createdAt.toLocaleDateString() %></div>
+
+    <a href="/" class="btn btn-secondary">All Articles</a>
+     <a href="/articles/edit/<%= articles.id %>" class="btn btn-info">Edit</a>
+    <div>
+     <%- articles.sanitizedHtml %>
+     </div>
+</div>
+
+
+</body>
